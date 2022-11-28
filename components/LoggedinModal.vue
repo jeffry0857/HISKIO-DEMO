@@ -138,7 +138,6 @@ export default {
   color: rgba(217, 217, 217, 1);
 }
 .close {
-  /* margin: 0 0 0 16px; */
   cursor: pointer;
 }
 

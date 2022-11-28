@@ -41,17 +41,17 @@
     </div>
 
     <div class="right-part flex items-center">
-      <span class="mx-4">
+      <span class="">
         我想開課
       </span>
       <div class="flex items-center" v-if="!loggedIn">
-        <svg class="mx-2" @click="showModal = true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="mx-4" @click="showModal = true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.3375 12.2275L19.9789 4.55384C20.0974 3.99979 19.7011 3.4722 19.1663 3.4722H5.52806L5.20979 1.81905C5.13049 1.407 4.78924 1.11108 4.39337 1.11108H0.833334C0.37309 1.11108 0 1.50749 0 1.9965V2.58678C0 3.07579 0.37309 3.4722 0.833334 3.4722H3.25983L5.69899 16.1423C5.11545 16.4989 4.72222 17.1675 4.72222 17.934C4.72222 19.075 5.59278 20 6.66667 20C7.74056 20 8.61111 19.075 8.61111 17.934C8.61111 17.3558 8.38726 16.8333 8.02695 16.4583H15.3064C14.9461 16.8333 14.7222 17.3558 14.7222 17.934C14.7222 19.075 15.5928 20 16.6667 20C17.7406 20 18.6111 19.075 18.6111 17.934C18.6111 17.116 18.1636 16.4092 17.5146 16.0744L17.7062 15.1788C17.8247 14.6248 17.4283 14.0972 16.8936 14.0972H7.57351L7.34625 12.9166H17.5249C17.914 12.9166 18.2513 12.6306 18.3375 12.2275Z" fill="#D9D9D9"/>
         </svg>
-        <button class="btn rounded mx-3 px-4 p-2" @click="showModal = true">
+        <button class="login-btn rounded" @click="showModal = true">
           登入
         </button>
-        <button class="btn rounded mx-3 px-4 p-2" @click="showModal = true">
+        <button class="register-btn rounded" @click="showModal = true">
           註冊
         </button>
       </div>
@@ -103,11 +103,23 @@ export default {
   font-weight: bold;
 }
 
-.btn {
+.login-btn {
+  background: #ffffff;
+  color: rgba(23, 143, 172, 1);
+  width: 63px;
+  height: 31px;
+  padding: 9px, 18px, 9px, 18px;
+  border: 1px solid #178FAC;
+  margin-left: 12.5px;
+}
+
+.register-btn {
   background: rgba(23, 143, 172, 1);
   color: #FFFFFF;
-  width: 291px;
-  height: 21px;
+  width: 63px;
+  height: 31px;
   padding: 9px, 18px, 9px, 18px;
+  border: 1px solid #178FAC;
+  margin-left: 12.5px;
 }
 </style>
