@@ -74,7 +74,7 @@ export default {
       .then(response => response.json())
       .then(data => {
         console.log(data);
-        document.cookie = `Token=${data.access_token} ;max-age=10`;
+        document.cookie = `Token=${data.access_token} ;max-age=${data.expires_in}`;
         this.userInfo.token = document.cookie;
         console.log(this.userInfo.token);
         this.$emit('close-modal')
