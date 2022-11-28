@@ -97,15 +97,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .brand {
   color: #178FAC;
   font-weight: bold;
 }
 
 .btn {
-  background: #178FAC;
+  background: rgba(23, 143, 172, 1);
   color: #FFFFFF;
-
+  width: 291px;
+  height: 21px;
+  padding: 9px, 18px, 9px, 18px;
 }
 </style>
